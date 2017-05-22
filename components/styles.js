@@ -32,8 +32,9 @@ let style = {
     content: '',
     display: 'table'
   },
-  eventType: {
+  eventCircle: {
     position: 'absolute',
+    display: 'flex',
     top: 0,
     left: 0,
     borderRadius: '50%',
@@ -43,15 +44,8 @@ let style = {
     background: '#e9f0f5',
     border: '2px solid #6fba1c'
   },
-  materialIcons: {
-    display: 'block',
-    width: 32,
-    height: 32,
-    position: 'relative',
-    left: '50%',
-    top: '50%',
-    marginLeft: -8,
-    marginTop: -8
+  icon: {
+    margin: 'auto'
   },
   eventContainer: {
     position: 'relative'

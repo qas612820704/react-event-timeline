@@ -4,7 +4,7 @@ import s from './styles'
 class TimelineEvent extends Component {
 
   mergeNotificationStyle(iconColor) {
-    return iconColor ? {...s.eventType, ...{color: iconColor, borderColor: iconColor}} : s.eventType
+    return iconColor ? {...s.eventCircle, ...{color: iconColor, borderColor: iconColor}} : s.eventCircle
   }
 
   mergeContentStyle(contentStyle) {
@@ -31,7 +31,7 @@ class TimelineEvent extends Component {
     const {createdAt, title, contentStyle, buttons, icon, iconColor, container, ...otherProps} = this.props
     return <div style={s.event}>
       <div style={this.mergeNotificationStyle(iconColor)}>
-        <span style={s.materialIcons}>{icon}</span>
+        <span style={s.icon}>{icon}</span>
       </div>
       <div {...otherProps} style={this.containerStyle()}>
 

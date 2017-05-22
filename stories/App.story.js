@@ -144,3 +144,16 @@ storiesOf('Timeline', module)
     }
     return <DynamicTimeline />
   })
+  .addWithInfo('Font-Awesome', () => (
+    <Timeline>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <TimelineEvent
+        title="John Doe sent a SMS"
+        createdAt="2016-09-12 10:06 PM"
+        icon={<i className={`fa fa-clock-o fa-1x`} aria-hidden="true"></i>}
+        iconColor="#6fba1c"
+      >
+        <p>Font Awesome looks fine!</p>
+      </TimelineEvent>
+    </Timeline>
+  ))
